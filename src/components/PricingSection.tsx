@@ -15,6 +15,7 @@ const plans = [
   {
     name: 'Family',
     price: '€79',
+    badge: 'Best seller',
     description: 'Two devices to cover more rooms',
     features: [
       'Everything in Basic',
@@ -39,30 +40,37 @@ const plans = [
 ];
 
 export default function PricingSection({ onReserve }: PricingSectionProps) {
-  const handleReserve = (plan: string) => {
-    trackEvent('reserve_click', { plan });
+  const handleBuy = (plan: string) => {
+    trackEvent('add_to_cart_click', { plan });
     onReserve();
   };
 
   return (
-    <section className="py-20 px-4 sm:px-6 bg-slate-50">
+    <section id="pricing" className="py-20 px-4 sm:px-6 bg-slate-50">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 text-center mb-4">
           Choose your package
         </h2>
         <p className="text-slate-500 text-center mb-14 max-w-xl mx-auto">
-          All packages are currently sold out. Sign up to be notified when we restock.
+          Free shipping in the EU. 30-day money-back guarantee on all orders.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`rounded-2xl p-8 flex flex-col ${
+              className={`rounded-2xl p-8 flex flex-col relative ${
                 plan.highlighted
                   ? 'bg-sky-500 text-white shadow-xl shadow-sky-500/25 scale-105'
                   : 'bg-white border border-slate-200 shadow-sm'
               }`}
             >
+              {plan.badge && (
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                  <span className="bg-amber-400 text-amber-900 text-xs font-bold px-4 py-1 rounded-full shadow-sm">
+                    {plan.badge}
+                  </span>
+                </div>
+              )}
               <h3
                 className={`text-lg font-semibold mb-1 ${
                   plan.highlighted ? 'text-sky-100' : 'text-slate-500'
@@ -98,24 +106,15 @@ export default function PricingSection({ onReserve }: PricingSectionProps) {
                   </li>
                 ))}
               </ul>
-              <div className="text-center mb-3">
-                <span className={`text-xs font-medium px-3 py-1 rounded-full ${
-                  plan.highlighted
-                    ? 'bg-sky-400/30 text-white'
-                    : 'bg-amber-100 text-amber-700'
-                }`}>
-                  Out of stock
-                </span>
-              </div>
               <button
-                onClick={() => handleReserve(plan.name)}
+                onClick={() => handleBuy(plan.name)}
                 className={`w-full py-3 rounded-xl font-semibold transition-colors ${
                   plan.highlighted
                     ? 'bg-white text-sky-600 hover:bg-sky-50'
                     : 'bg-sky-500 text-white hover:bg-sky-600'
                 }`}
               >
-                Notify me when available
+                Add to cart
               </button>
             </div>
           ))}
