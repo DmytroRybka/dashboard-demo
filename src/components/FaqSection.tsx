@@ -24,7 +24,7 @@ const faqs = [
   {
     question: 'Can I use it at home too?',
     answer:
-      'Absolutely. Many parents use PeekProof full-time on their child\'s bedroom window, nursery, or playroom — not just when travelling.',
+      'Absolutely. Many customers use PeekProof on ground-floor windows, garden doors, or basement windows at home — not just when travelling.',
   },
 ];
 

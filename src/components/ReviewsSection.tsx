@@ -3,19 +3,19 @@ const reviews = [
     name: 'Sarah M.',
     location: 'London, UK',
     stars: 5,
-    text: 'Our 3-year-old figured out the hotel window latch in seconds. PeekProof caught it before we even stood up. Absolute lifesaver.',
+    text: 'We had a ground-floor Airbnb in Barcelona and I could hear people walking past our window at night. PeekProof let us actually sleep. Worth every cent.',
   },
   {
     name: 'Thomas K.',
     location: 'Munich, Germany',
     stars: 5,
-    text: 'We travel a lot with two toddlers. I put PeekProof on every window the moment we check in. Can finally relax.',
+    text: 'We travel as a family 6+ times a year. First thing I do at check-in is stick PeekProof on the windows. Now my wife can actually relax.',
   },
   {
     name: 'Emma L.',
     location: 'Stockholm, Sweden',
     stars: 4,
-    text: 'My daughter sleepwalks. We use PeekProof at home on her bedroom window and take it to every holiday rental. Battery lasts months.',
+    text: 'Someone tried our hotel window one night in Thailand. PeekProof went off instantly — the alarm scared them away. I don\'t travel without it.',
   },
 ];
 
@@ -41,10 +41,10 @@ export default function ReviewsSection() {
     <section id="reviews" className="py-20 px-4 sm:px-6 bg-white">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 text-center mb-4">
-          Loved by parents worldwide
+          Trusted by travellers worldwide
         </h2>
         <p className="text-slate-500 text-center mb-14 max-w-xl mx-auto">
-          Join thousands of parents who travel with peace of mind.
+          Join thousands of families who travel with peace of mind.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {reviews.map((review) => (
