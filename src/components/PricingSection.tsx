@@ -20,7 +20,7 @@ const plans = [
       'Everything in Basic',
       '2 devices included',
       'Phone notifications',
-      'Priority early access',
+      'Most popular choice',
     ],
     highlighted: true,
   },
@@ -48,10 +48,10 @@ export default function PricingSection({ onReserve }: PricingSectionProps) {
     <section className="py-20 px-4 sm:px-6 bg-slate-50">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 text-center mb-4">
-          Reserve your spot
+          Choose your package
         </h2>
         <p className="text-slate-500 text-center mb-14 max-w-xl mx-auto">
-          Early access pricing — no payment required. Just tell us you're interested.
+          All packages are currently sold out. Sign up to be notified when we restock.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {plans.map((plan) => (
@@ -98,6 +98,15 @@ export default function PricingSection({ onReserve }: PricingSectionProps) {
                   </li>
                 ))}
               </ul>
+              <div className="text-center mb-3">
+                <span className={`text-xs font-medium px-3 py-1 rounded-full ${
+                  plan.highlighted
+                    ? 'bg-sky-400/30 text-white'
+                    : 'bg-amber-100 text-amber-700'
+                }`}>
+                  Out of stock
+                </span>
+              </div>
               <button
                 onClick={() => handleReserve(plan.name)}
                 className={`w-full py-3 rounded-xl font-semibold transition-colors ${
@@ -106,7 +115,7 @@ export default function PricingSection({ onReserve }: PricingSectionProps) {
                     : 'bg-sky-500 text-white hover:bg-sky-600'
                 }`}
               >
-                Reserve spot
+                Notify me when available
               </button>
             </div>
           ))}

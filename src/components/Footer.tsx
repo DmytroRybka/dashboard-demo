@@ -16,7 +16,7 @@ export default function Footer() {
           </a>
         </div>
         <p className="text-xs text-slate-500">
-          This is an early validation page. The product is not available for purchase yet.
+          &copy; {new Date().getFullYear()} WindowGuard. All rights reserved.
         </p>
       </div>
     </footer>

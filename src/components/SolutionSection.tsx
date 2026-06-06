@@ -39,7 +39,7 @@ export default function SolutionSection() {
           One small device. Three layers of protection.
         </h2>
         <p className="text-slate-500 text-center mb-14 max-w-2xl mx-auto">
-          WindowGuard combines multiple sensors in a pocket-sized device — no installation, no camera, no Wi-Fi needed.
+          WindowGuard combines multiple sensors in a pocket-sized device — trusted by over 10,000 travelling families worldwide.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((item) => (

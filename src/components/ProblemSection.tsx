@@ -36,7 +36,7 @@ export default function ProblemSection() {
     <section className="py-20 px-4 sm:px-6 bg-white">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 text-center mb-4">
-          Travelling with kids? Windows are an overlooked risk.
+          Why thousands of families trust WindowGuard
         </h2>
         <p className="text-slate-500 text-center mb-14 max-w-2xl mx-auto">
           Most parents worry about pool safety — but window access is just as important and much harder to control away from home.

@@ -5,8 +5,8 @@ interface HeroProps {
 }
 
 export default function Hero({ onCtaClick }: HeroProps) {
-  const handlePrimary = () => {
-    trackEvent('cta_click', { location: 'hero', type: 'join_early_access' });
+  const handleNotify = () => {
+    trackEvent('cta_click', { location: 'hero', type: 'notify_restock' });
     onCtaClick();
   };
 
@@ -18,6 +18,10 @@ export default function Hero({ onCtaClick }: HeroProps) {
   return (
     <section className="bg-gradient-to-b from-sky-50 via-sky-50/50 to-white pt-24 pb-16 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto text-center">
+        <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-800 text-sm font-medium px-4 py-1.5 rounded-full mb-6">
+          <span className="w-2 h-2 bg-amber-500 rounded-full" />
+          Currently out of stock
+        </div>
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-slate-800 leading-tight mb-6">
           Portable window security for family travel
         </h1>
@@ -27,10 +31,10 @@ export default function Hero({ onCtaClick }: HeroProps) {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-14">
           <button
-            onClick={handlePrimary}
+            onClick={handleNotify}
             className="bg-sky-500 hover:bg-sky-600 text-white font-semibold px-8 py-3.5 rounded-xl text-lg transition-colors shadow-lg shadow-sky-500/25"
           >
-            Join early access
+            Notify me when available
           </button>
           <button
             onClick={handleSecondary}

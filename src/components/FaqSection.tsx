@@ -2,9 +2,9 @@ import { useState } from 'react';
 
 const faqs = [
   {
-    question: 'Is this a real product?',
+    question: 'When will it be back in stock?',
     answer:
-      'This is an early validation page. The product is not available yet. We are gauging interest to decide whether to bring WindowGuard to market. Your signup helps us understand demand.',
+      'Due to high demand, WindowGuard is currently sold out. We are working to restock as soon as possible. Sign up to be the first to know when it\'s available again.',
   },
   {
     question: 'Does it use a camera?',
@@ -22,9 +22,9 @@ const faqs = [
       'Yes. The device is small, has no sharp edges, and attaches securely to glass with industrial-grade suction cups. It is designed to be out of reach when mounted on a window.',
   },
   {
-    question: 'When will it launch?',
+    question: 'Can I use it at home too?',
     answer:
-      'We are currently validating demand. If there is enough interest, we plan to start production in 2026. Early access subscribers will be the first to know.',
+      'Absolutely. While WindowGuard was designed for travel, many customers use it on children\'s bedroom windows, basement windows, or any window they want to monitor at home.',
   },
 ];
 
