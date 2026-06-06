@@ -3,19 +3,19 @@ const reviews = [
     name: 'Sarah M.',
     location: 'London, UK',
     stars: 5,
-    text: 'Used this in three different hotels across Spain. So easy to set up and gave us real peace of mind with the kids sleeping in the next room.',
+    text: 'Our 3-year-old figured out the hotel window latch in seconds. PeekProof caught it before we even stood up. Absolute lifesaver.',
   },
   {
     name: 'Thomas K.',
     location: 'Munich, Germany',
     stars: 5,
-    text: 'We had a ground-floor Airbnb in Lisbon and I felt so much better having the WindowGuard on. Worth every cent.',
+    text: 'We travel a lot with two toddlers. I put PeekProof on every window the moment we check in. Can finally relax.',
   },
   {
     name: 'Emma L.',
     location: 'Stockholm, Sweden',
     stars: 4,
-    text: 'Great concept and works really well. Battery lasts forever. Would love a version that connects to Apple Home in the future.',
+    text: 'My daughter sleepwalks. We use PeekProof at home on her bedroom window and take it to every holiday rental. Battery lasts months.',
   },
 ];
 
@@ -41,10 +41,10 @@ export default function ReviewsSection() {
     <section id="reviews" className="py-20 px-4 sm:px-6 bg-white">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 text-center mb-4">
-          Loved by families worldwide
+          Loved by parents worldwide
         </h2>
         <p className="text-slate-500 text-center mb-14 max-w-xl mx-auto">
-          Over 10,000 devices sold. Here's what parents are saying.
+          Join thousands of parents who travel with peace of mind.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {reviews.map((review) => (

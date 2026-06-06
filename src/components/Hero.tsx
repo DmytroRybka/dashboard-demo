@@ -22,14 +22,14 @@ export default function Hero({ onCtaClick }: HeroProps) {
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
           </svg>
-          Rated 4.8/5 by 2,400+ families
+          Rated 4.8/5 by 2,400+ parents
         </div>
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-slate-800 leading-tight mb-6">
-          Portable window security for family travel
+          Keep your kids safe near any window, anywhere
         </h1>
         <p className="text-lg sm:text-xl text-slate-600 mb-4 max-w-2xl mx-auto leading-relaxed">
-          Attach it to a hotel or Airbnb window in seconds. Get alerted if the
-          window opens, gets hit, or someone approaches from outside.
+          A tiny device that sticks to any hotel or Airbnb window and alerts you
+          instantly if your child opens it, touches it, or gets too close.
         </p>
         <p className="text-sm text-slate-400 mb-10">Starting from €49 · Free shipping in the EU</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-14">
@@ -63,7 +63,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
             </div>
           </div>
           <p className="text-slate-500 text-sm mt-6">
-            Small device attaches to any window with suction cups
+            Sticks to any window in seconds — completely child-safe
           </p>
         </div>
       </div>

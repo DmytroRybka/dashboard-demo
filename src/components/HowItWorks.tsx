@@ -12,12 +12,12 @@ const steps = [
   {
     number: 3,
     title: 'Sleep with peace of mind',
-    description: 'Go to sleep knowing every window is monitored. No app setup required.',
+    description: 'Tuck the kids in knowing every window is watched. No app setup required.',
   },
   {
     number: 4,
     title: 'Instant alert',
-    description: 'If something happens, you get a loud alarm and phone notification immediately.',
+    description: 'If your child touches the window, you get a loud alarm and phone notification immediately.',
   },
 ];
 

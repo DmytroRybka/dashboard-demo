@@ -90,7 +90,7 @@ export default function EmailCaptureModal({ isOpen, onClose }: EmailCaptureModal
             </div>
             <h3 className="text-xl font-bold text-slate-800 mb-2">Sorry, we're sold out</h3>
             <p className="text-slate-600 mb-2">
-              WindowGuard is currently out of stock due to high demand.
+              PeekProof is currently out of stock due to high demand.
             </p>
             <p className="text-slate-500 text-sm mb-8">
               We're producing more units as fast as we can. Expected restock: 4–6 weeks.
@@ -117,7 +117,7 @@ export default function EmailCaptureModal({ isOpen, onClose }: EmailCaptureModal
           <>
             <h3 className="text-2xl font-bold text-slate-800 mb-2">Get notified when back in stock</h3>
             <p className="text-slate-500 mb-6">
-              We'll send you one email the moment WindowGuard is available again.
+              We'll send you one email the moment PeekProof is available again.
             </p>
             <form onSubmit={handleSubmit} className="space-y-5">
               <div>
@@ -198,7 +198,7 @@ export default function EmailCaptureModal({ isOpen, onClose }: EmailCaptureModal
             </div>
             <h3 className="text-xl font-bold text-slate-800 mb-2">You're on the list!</h3>
             <p className="text-slate-600">
-              Thanks! We'll email you as soon as WindowGuard is back in stock.
+              Thanks! We'll email you as soon as PeekProof is back in stock.
             </p>
           </div>
         )}

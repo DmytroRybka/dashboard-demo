@@ -4,12 +4,12 @@ const faqs = [
   {
     question: 'When will it be back in stock?',
     answer:
-      'Due to high demand, WindowGuard is currently sold out. We are working to restock as soon as possible. Sign up to be the first to know when it\'s available again.',
+      'Due to high demand, PeekProof is currently sold out. We are working to restock as soon as possible. Sign up to be the first to know when it\'s available again.',
   },
   {
     question: 'Does it use a camera?',
     answer:
-      'No. WindowGuard is privacy-first — it uses vibration and magnetic sensors only. There is no camera, no microphone, and no video recording of any kind.',
+      'No. PeekProof is privacy-first — it uses vibration and magnetic sensors only. There is no camera, no microphone, and no video recording of any kind.',
   },
   {
     question: 'Does it need hotel Wi-Fi?',
@@ -24,7 +24,7 @@ const faqs = [
   {
     question: 'Can I use it at home too?',
     answer:
-      'Absolutely. While WindowGuard was designed for travel, many customers use it on children\'s bedroom windows, basement windows, or any window they want to monitor at home.',
+      'Absolutely. Many parents use PeekProof full-time on their child\'s bedroom window, nursery, or playroom — not just when travelling.',
   },
 ];
 
